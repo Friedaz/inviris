@@ -22,10 +22,13 @@ namespace Inviris.GUI.Solution
         {
             saveUpdate.Hide();
             saveNew.Hide();
+            deleteData.Hide();
+
             Main fm = new Main();
             if (textBox1.Text != "")
             {
                 saveUpdate.Show();
+                deleteData.Show();
             }
             else
             {
@@ -33,6 +36,7 @@ namespace Inviris.GUI.Solution
             }
 
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -53,7 +57,7 @@ namespace Inviris.GUI.Solution
             {
                 MessageBox.Show("Updated");
                 this.Hide();
-                fm.Refresh();
+                fm.Load_Data();
             }
             else
             {
@@ -75,7 +79,7 @@ namespace Inviris.GUI.Solution
             {
                 MessageBox.Show("Deleted");
                 this.Hide();
-                fm.Refresh();
+                fm.Load_Data();
             }
             else
             {
@@ -97,7 +101,7 @@ namespace Inviris.GUI.Solution
             {
                 MessageBox.Show("Created");
                 this.Hide();
-                fm.Refresh();
+                fm.Load_Data();
             }
             else
             {

@@ -12,11 +12,13 @@ using System.Data.Sql;
 using System.Configuration;
 using System.IO;
 using System.Data.Odbc;
+using PagedList;
 
 namespace Inviris.GUI.Solution
 {
     public partial class Main : Form
-    {
+    { 
+
         string myConnection = "DSN=inviris;MultipleActiveResultSets=True";
 
         public Main()
@@ -26,6 +28,11 @@ namespace Inviris.GUI.Solution
 
         private void Main_Load(object sender, EventArgs e)
         {
+            Load_Data();
+        }
+
+        public void Load_Data()
+        {
             OdbcConnection myConn = new OdbcConnection(myConnection);
 
             myConn.Open();
@@ -34,7 +41,6 @@ namespace Inviris.GUI.Solution
             sqlDa.Fill(dtbl);
 
             DataDisplay.DataSource = dtbl;
-
         }
 
 
@@ -269,6 +275,11 @@ namespace Inviris.GUI.Solution
             updt.textBox6.Text = this.DataDisplay.CurrentRow.Cells[5].Value.ToString();
             updt.textBox7.Text = this.DataDisplay.CurrentRow.Cells[6].Value.ToString();
             updt.ShowDialog();
+        }
+
+        private void pdf_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

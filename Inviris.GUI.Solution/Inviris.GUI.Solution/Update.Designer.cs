@@ -200,7 +200,7 @@
             this.saveUpdate.BackColor = System.Drawing.SystemColors.HotTrack;
             this.saveUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.saveUpdate.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.saveUpdate.Location = new System.Drawing.Point(271, 344);
+            this.saveUpdate.Location = new System.Drawing.Point(362, 344);
             this.saveUpdate.Name = "saveUpdate";
             this.saveUpdate.Size = new System.Drawing.Size(85, 38);
             this.saveUpdate.TabIndex = 14;
@@ -213,7 +213,7 @@
             this.deleteData.BackColor = System.Drawing.Color.Red;
             this.deleteData.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.deleteData.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.deleteData.Location = new System.Drawing.Point(362, 344);
+            this.deleteData.Location = new System.Drawing.Point(271, 344);
             this.deleteData.Name = "deleteData";
             this.deleteData.Size = new System.Drawing.Size(85, 38);
             this.deleteData.TabIndex = 15;
@@ -226,7 +226,7 @@
             this.saveNew.BackColor = System.Drawing.SystemColors.HotTrack;
             this.saveNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.saveNew.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.saveNew.Location = new System.Drawing.Point(271, 344);
+            this.saveNew.Location = new System.Drawing.Point(362, 344);
             this.saveNew.Name = "saveNew";
             this.saveNew.Size = new System.Drawing.Size(85, 38);
             this.saveNew.TabIndex = 16;
