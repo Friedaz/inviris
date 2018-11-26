@@ -44,6 +44,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.saveUpdate = new System.Windows.Forms.Button();
             this.deleteData = new System.Windows.Forms.Button();
+            this.saveNew = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -220,12 +221,26 @@
             this.deleteData.UseVisualStyleBackColor = false;
             this.deleteData.Click += new System.EventHandler(this.deleteData_Click);
             // 
+            // saveNew
+            // 
+            this.saveNew.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.saveNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.saveNew.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.saveNew.Location = new System.Drawing.Point(271, 344);
+            this.saveNew.Name = "saveNew";
+            this.saveNew.Size = new System.Drawing.Size(85, 38);
+            this.saveNew.TabIndex = 16;
+            this.saveNew.Text = "CREATE";
+            this.saveNew.UseVisualStyleBackColor = false;
+            this.saveNew.Click += new System.EventHandler(this.saveNew_Click);
+            // 
             // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(52)))), ((int)(((byte)(52)))));
             this.ClientSize = new System.Drawing.Size(515, 403);
+            this.Controls.Add(this.saveNew);
             this.Controls.Add(this.deleteData);
             this.Controls.Add(this.saveUpdate);
             this.Controls.Add(this.textBox7);
@@ -244,6 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Update";
             this.Text = "Update";
+            this.Load += new System.EventHandler(this.Update_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,5 +283,6 @@
         public System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button saveUpdate;
         private System.Windows.Forms.Button deleteData;
+        private System.Windows.Forms.Button saveNew;
     }
 }
